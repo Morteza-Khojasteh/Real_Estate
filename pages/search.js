@@ -40,7 +40,7 @@ const Search = ({ properties }) => {
           <Property key={property} property={property} />
         ))}
       </Flex>
-      {/* {properties.length === 0 && (
+      {properties.length === 0 && (
         <Flex
           justifyContent="center"
           alignItems="center"
@@ -53,7 +53,7 @@ const Search = ({ properties }) => {
             Not Found!
           </Text>
         </Flex>
-      )} */}
+      )}
     </Box>
   );
 };
