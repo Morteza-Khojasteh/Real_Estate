@@ -9,7 +9,7 @@ import ImageScrollbar from "../../components/ImageScrollbar";
 
 const PropertyDetails = ({ PropertyDetails : { price, rentFrequency, rooms, baths, area, title, agency, purpose, isVerified, description, type, furnishingStatus, amenities, photos } }) => (
   <Box maxWidth="1000px" margin="auto" p="4">
-    {photos && <ImageScrollbar />}
+    {photos && <ImageScrollbar  data={photos} />}
   </Box>
 );
 
@@ -17,7 +17,7 @@ export default PropertyDetails;
 
 export async function getServerSideProps({ params: { id } }) {
   const data = await fetchApi(
-    `${baseUrl}/properties/detail?externalIDs=${id}`
+    `${baseUrl}/properties/detail?externalID=${id}`
   );
 
 
