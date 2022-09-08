@@ -9,8 +9,6 @@ import noResult from "../assets/images/notFound.png";
 import { fetchApi, baseUrl } from "../utils/fetchApi";
 
 const Search = ({ properties }) => {
-  console.log(properties, "<<<<<<<<");
-
   const [searchFilters, setSearchFilters] = useState(false);
   const router = useRouter();
 
